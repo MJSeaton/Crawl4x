@@ -1,3 +1,8 @@
+static const pop_entry pop_city[] =
+{
+    //city
+    {0,0,0,FLAT,MONS_0}
+};
 static const pop_entry pop_d[] =
 { // Dungeon (OOD cap: 27)
   { -2,  8,  515, SEMI, MONS_GIANT_COCKROACH },
@@ -140,7 +145,6 @@ static const pop_entry pop_temple[] =
 { // Temple
   { 0,0,0,FLAT,MONS_0 }
 };
-
 static const pop_entry pop_orc[] =
 { // Orcish Mines
   {  1,  4,  384, FLAT, MONS_NO_MONSTER },
@@ -1064,6 +1068,7 @@ static const pop_entry pop_depths[] =
 #define POP(x) { pop_##x, ARRAYSZ(pop_##x) - 1 }
 static const struct { const pop_entry *pop; int count; } population[] =
 {
+    POP(city),
     POP(d),
     POP(temple),
     POP(orc),
@@ -1171,6 +1176,7 @@ static const pop_entry pop_generic_late_zombie[] =
 
 static const struct { const pop_entry *pop; int count; } population_zombie[] =
 {
+    POP(city),
     POP(d),
     POP(temple),
     POP(orc),
@@ -1275,6 +1281,7 @@ static const pop_entry pop_water_hell[] =
 // Shoals, Abyss, Pan, Zot, D:1-5 liquid monsters are blocked in dungeon.cc
 static const struct { const pop_entry *pop; int count; } population_water[] =
 {
+    POP(water_generic),
     POP(water_d),
     POP(water_generic),
     POP(water_generic),
@@ -1377,6 +1384,7 @@ static const pop_entry pop_lava_hell[] =
 
 static const struct { const pop_entry *pop; int count; } population_lava[] =
 {
+    POP(lava_generic),
     POP(lava_d),
     POP(lava_generic),
     POP(lava_generic),

@@ -15,6 +15,7 @@ branch_type root_branch;
 
 /// A save-compat ordering for branches.
 static const branch_type logical_branch_order[] = {
+    
     BRANCH_DUNGEON,
     BRANCH_TEMPLE,
     BRANCH_LAIR,
@@ -55,11 +56,14 @@ static const branch_type logical_branch_order[] = {
     BRANCH_VOLCANO,
     BRANCH_WIZLAB,
     BRANCH_DESOLATION,
+    BRANCH_CITY,
+
 };
 COMPILE_CHECK(ARRAYSZ(logical_branch_order) == NUM_BRANCHES);
 
 /// Branches ordered loosely by challenge level.
 static const branch_type danger_branch_order[] = {
+    BRANCH_CITY,
     BRANCH_TEMPLE,
     BRANCH_BAZAAR,
     BRANCH_TROVE,

@@ -9,16 +9,17 @@ const Branch branches[NUM_BRANCHES] =
     //  entry message
     //  floor colour, rock colour
     //  travel shortcut, runes, ambient noise level
+ 
+    
 
-    { BRANCH_DUNGEON, NUM_BRANCHES, 0, 0, 15, 0,
+    { BRANCH_DUNGEON, NUM_BRANCHES, 0, 1, 15, 0,
       BFLAG_NONE,
       NUM_FEATURES, DNGN_EXIT_DUNGEON, NUM_FEATURES,
       "Dungeon", "the Dungeon", "D",
       nullptr,
       LIGHTGREY, BROWN,
       'D', {}, BRANCH_NOISE_NORMAL },
-
-    { BRANCH_TEMPLE, BRANCH_DUNGEON, 4, 7, 1, 5,
+        { BRANCH_TEMPLE, BRANCH_DUNGEON, 4, 7, 1, 5,
       BFLAG_NO_ITEMS,
       DNGN_ENTER_TEMPLE, DNGN_EXIT_TEMPLE, NUM_FEATURES,
       "Temple", "the Ecumenical Temple", "Temple",
@@ -308,4 +309,11 @@ const Branch branches[NUM_BRANCHES] =
       "You enter a great desolation of salt!",
       LIGHTGREY, BROWN, // TODO
       '9', {}, BRANCH_NOISE_LOUD },
+    
+    { BRANCH_CITY, BRANCH_DUNGEON, 1,1,1,1, BFLAG_ISLANDED,
+      DNGN_ENTER_CITY,DNGN_EXIT_CITY, NUM_FEATURES, "City", "the City", "City",
+        "You breathe a sigh of relief upon returning to Cultivario, the last bastion of civilization.",
+        BLACK, WHITE,
+        'C', {}, BRANCH_NOISE_NORMAL},
+    
 };

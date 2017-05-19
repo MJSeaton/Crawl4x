@@ -128,7 +128,7 @@ enum dungeon_feature_type
     DNGN_ENTER_FOREST,
 #endif
     DNGN_ENTER_DEPTHS,
-
+    
     // Exits from various branches
     // Order must be the same as above
 #if TAG_MAJOR_VERSION == 34
@@ -154,7 +154,7 @@ enum dungeon_feature_type
     DNGN_EXIT_FOREST,
 #endif
     DNGN_EXIT_DEPTHS,
-
+    
     DNGN_ALTAR_ZIN,
     DNGN_ALTAR_SHINING_ONE,
     DNGN_ALTAR_KIKUBAAQUDGHA,
@@ -223,7 +223,7 @@ enum dungeon_feature_type
     DNGN_ENTER_VOLCANO,
     DNGN_ENTER_WIZLAB,
     DNGN_ENTER_DESOLATION,
-
+    DNGN_ENTER_CITY,
     DNGN_EXIT_ZIGGURAT,
     DNGN_EXIT_BAZAAR,
     DNGN_EXIT_TROVE,
@@ -235,6 +235,7 @@ enum dungeon_feature_type
     DNGN_EXIT_WIZLAB,
     DNGN_EXIT_LABYRINTH,
     DNGN_EXIT_DESOLATION,
+    DNGN_EXIT_CITY,
 #if TAG_MAJOR_VERSION == 34
 
     DNGN_ALTAR_GOZAG,

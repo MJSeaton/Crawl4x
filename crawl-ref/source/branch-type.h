@@ -2,6 +2,7 @@
 
 enum branch_type                // you.where_are_you
 {
+    
     BRANCH_DUNGEON,
     BRANCH_TEMPLE,
     BRANCH_FIRST_NON_DUNGEON = BRANCH_TEMPLE,
@@ -52,6 +53,7 @@ enum branch_type                // you.where_are_you
     BRANCH_DEPTHS,
 #endif
     BRANCH_DESOLATION,
+    BRANCH_CITY,
     NUM_BRANCHES,
 
     GLOBAL_BRANCH_INFO = 127,

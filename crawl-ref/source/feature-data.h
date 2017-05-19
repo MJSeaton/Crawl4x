@@ -378,7 +378,7 @@ PORTAL_ENTRANCE(DNGN_ENTER_VOLCANO, "dark tunnel", "enter_volcano", RED),
 PORTAL_ENTRANCE(DNGN_ENTER_WIZLAB, "magical portal", "enter_wizlab", ETC_SHIMMER_BLUE),
 PORTAL_ENTRANCE(DNGN_ENTER_DESOLATION, "ruined gateway", "enter_desolation", WHITE),
 #if TAG_MAJOR_VERSION == 34
-PORTAL_EXIT(DNGN_EXIT_PORTAL_VAULT, "gate leading back out of this place", "exit_portal_vault", ETC_SHIMMER_BLUE),
+
 #endif
 PORTAL_EXIT(DNGN_EXIT_ZIGGURAT, "gate leading back out of this place", "exit_ziggurat", ETC_SHIMMER_BLUE),
 PORTAL_EXIT(DNGN_EXIT_BAZAAR, "gate leading back out of this place", "exit_bazaar", ETC_SHIMMER_BLUE),
@@ -390,7 +390,6 @@ PORTAL_EXIT(DNGN_EXIT_ICE_CAVE, "ice covered gate leading back out of this place
 PORTAL_EXIT(DNGN_EXIT_VOLCANO, "rocky tunnel leading out of this place", "exit_volcano", RED),
 PORTAL_EXIT(DNGN_EXIT_WIZLAB, "portal leading out of this place", "exit_wizlab", ETC_SHIMMER_BLUE),
 PORTAL_EXIT(DNGN_EXIT_DESOLATION, "gate leading back out of this place", "exit_desolation", WHITE),
-
 #define BRANCH_ENTRANCE(enum, name, vaultname)\
 {\
     enum, name, vaultname,\
@@ -469,6 +468,8 @@ BRANCH_EXIT(DNGN_EXIT_SPIDER, "crawl-hole back to the Lair", "exit_spider_nest")
 BRANCH_ENTRANCE(DNGN_ENTER_DEPTHS, "staircase to the Depths", "enter_depths"),
 BRANCH_EXIT(DNGN_EXIT_DEPTHS, "staircase back to the Dungeon", "exit_depths"),
 
+BRANCH_ENTRANCE(DNGN_ENTER_CITY, "portal to Cultivario", "enter_city"),
+BRANCH_EXIT(DNGN_EXIT_CITY, "portal back to a lower plane", "exit_city"),
 #define ALTAR(enum, name, vaultname, colour)\
 {\
     enum, name, vaultname,\
